@@ -1,0 +1,70 @@
+.notesList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ListGroup styling */
+.notesList .list-group {
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Individual note item */
+.noteItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: #ffffff;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.noteItem:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Title */
+.noteTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: #343a40;
+}
+
+/* Body text */
+.noteBody {
+  font-size: 0.95rem;
+  color: #495057;
+}
+
+/* Metadata (time and dirty badge) */
+.noteMeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #6c757d;
+}
+
+/* Unsaved indicator */
+.unsavedBadge {
+  color: #ffc107;
+  font-weight: 500;
+}
+
+/* Button custom style (optional) */
+button.btn-outline-danger {
+  color: #dc3545;
+  border-color: #dc3545;
+}
+
+button.btn-outline-danger:hover {
+  background-color: #dc3545;
+  color: #fff;
+}

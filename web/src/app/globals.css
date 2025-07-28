@@ -1,0 +1,51 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+body {
+  background-color: #f8f9fa;
+}
+
+.note-card {
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.note-card:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transform: translateY(-1px);
+}
+
+.note-card.selected {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13,110,253,0.25);
+}
+
+.sync-status {
+  border-radius: 8px;
+}
+
+.loading-spinner {
+  width: 2rem;
+  height: 2rem;
+}
+
+.note-content {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem;
+  min-height: 300px;
+  white-space: pre-wrap;
+}
+
+.fab {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
